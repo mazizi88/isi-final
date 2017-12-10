@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Final_isi.Data
+namespace Common.Interface
 {
-    class General
+    public interface IDTOInt32
     {
+        Int32 ID { set; get; }
     }
 }

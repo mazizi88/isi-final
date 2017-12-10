@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04B3EB6B-B573-4492-B471-455505984AFC}</ProjectGuid>
+    <ProjectGuid>{38AF9CCC-B799-43C0-A5D8-E006824A0BEF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Final_isi.Data</RootNamespace>
-    <AssemblyName>Final_isi.Data</AssemblyName>
+    <RootNamespace>Final_isi.Common</RootNamespace>
+    <AssemblyName>Final_isi.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -41,14 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="General.cs" />
+    <Compile Include="DTO\Member.cs" />
+    <Compile Include="DTO\Transaction.cs" />
+    <Compile Include="Enum\Status.cs" />
+    <Compile Include="Interface\IDTOInt32.cs" />
+    <Compile Include="Interface\IDTOInt64.cs" />
+    <Compile Include="Interface\IMember.cs" />
+    <Compile Include="Interface\ITransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enum\" />
-    <Folder Include="Interface\" />
-    <Folder Include="Mapper\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
