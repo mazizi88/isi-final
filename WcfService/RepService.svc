@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Final_isi.WcfService.RepService" CodeBehind="RepService.svc.cs" %>
